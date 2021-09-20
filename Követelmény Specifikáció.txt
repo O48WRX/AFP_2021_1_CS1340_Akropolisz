@@ -36,7 +36,7 @@ Projektünkkel igyekszünk egy letisztult weboldalon lévő játékot nyújtani,
 valamint nem igényel financiális beruházást sem a játék elkezdéséhez, vagy további játszáshoz sem. A projekt a Blackjack/21 megszokott szabályai alapján működik, emiatt nem kell változtatnunk rajta.
 A szolgáltatásunk könnyen és komfortosan kezelhetőségével szeretnénk kitűnni a tömegből, valamint azzal, hogy nem igényel személyes adatokat.
 Manapság a személyes adatok megadása egy oldalon sok veszélynek teszi ki adatainkat, bizonyos data leak-ek során olyan emberek kezébe is juthatnak adataink,
-akik nem a legális térben mozognak, ezt szeretnénk kiküszöölni azzal, hogy egyáltalán nem kérünk semmiféle regisztrációt és semmilyen személyes adatot a
+akik nem a legális térben mozognak, ezt szeretnénk kiküszöbölni azzal, hogy egyáltalán nem kérünk semmiféle regisztrációt és semmilyen személyes adatot a
 felhasználóktól, továbbá kliens oldalon fut, így még egy szerver sem kezel semmit, amit a felhasználó tudta nélkül küldene az eszköze.
 
 8. Fogalomtár
