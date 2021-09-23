@@ -2,23 +2,31 @@ Funkcionális Specifikáció
 
 1. Áttekintés
 
-Egy olyan kliensoldali alkalmazást fejlesztünk, ami a kaszinókban elterjedt, híres Blackjack/21 kártyajátékot nyújtja a felhasználók számára ingyenesen, regisztrációmentesen és személyes adatok felhasználása nélkül. 
-Lehetőségünk van, ezt a játékot egy szélesebb körben terjeszteni, megismertetni és gyakoroltatni azokkal, akiknek másképp nem lenne könnyen elérhető módja erre. Az alkalmazást bármikor el lehet érni böngészőből, letöltést nem igényel, valamint mivel kliens-oldalon fut, így még a szerver hibák lehetősége sem áll fenn, hogy megállítsa a felhasználót a játék élvezésében. 
+Egy olyan kliensoldali alkalmazást fejlesztünk, ami a kaszinókban elterjedt, híres Blackjack/21 kártyajátékot nyújtja
+a felhasználók számára ingyenesen, regisztrációmentesen és személyes adatok felhasználása nélkül. 
+Lehetőségünk van, ezt a játékot egy szélesebb körben terjeszteni, megismertetni és gyakoroltatni azokkal,
+akiknek másképp nem lenne könnyen elérhető módja erre. 
+Az alkalmazást bármikor el lehet érni böngészőből, letöltést nem igényel, valamint mivel kliens-oldalon fut, 
+így még a szerver hibák lehetősége sem áll fenn, hogy megállítsa a felhasználót a játék élvezésében. 
 A játék a megszokott Blackjack/21 szabályai szerint fog működni, amivel a felhasználó próbára teheti szerencséjét és logikai gondolkozását
 
 
 2. Jelenlegi helyzet
 
 A megrendelő szeretne, egy letisztult oldallal, ingyenes, letöltést nem igénylő Blackjack gyakorló webes alkalmazást, ami nem szerverfüggő. 
-A rendszer segítséget nyújt azoknak, akiknek nem áll módjában fizetni hasonló szolgáltatásokért és/vagy nem hajlandó megosztani adatait, azzal veszélynek kitéve azokat, esetlegesen pedig csak egy gyakorlófelületet keres, ami elmagyarázza a játék szabályait.
+A rendszer segítséget nyújt azoknak, akiknek nem áll módjában fizetni hasonló szolgáltatásokért és/vagy nem hajlandó megosztani adatait, 
+azzal veszélynek kitéve azokat, esetlegesen pedig csak egy gyakorlófelületet keres, ami elmagyarázza a játék szabályait.
 
 3. Jelenlegi üzleti folyamatok modellje
 
 Manapság minden ilyen elterjedt szerencsejáték, ami online megtalálható igényel regisztrációt és egy összeg prémium befizetését a játék elkezdéséhez.
-Ez leszűkíti a lehetséges felhasználók halmazát, sőt teljesen elijeszt embereket a szerencsejátékok fogalmától. Lehetséges felhasználók alternatívákat keresnek, de ha találnak is, akkor olyat ami viszont személyes adatok megadásával elérhető csak. 
-Ez esetleges data-leak esetén adatlopáshoz vezethet, ami negatív hatással van a felhasználó és a cég megbízhatóságára is. Általában ezekhez az online szerencsejátékokhoz, nem található az adott oldalon egy útmutató, vagy szabályzat sem. 
+Ez leszűkíti a lehetséges felhasználók halmazát, sőt teljesen elijeszt embereket a szerencsejátékok fogalmától. 
+Lehetséges felhasználók alternatívákat keresnek, de ha találnak is, akkor olyat ami viszont személyes adatok megadásával elérhető csak. 
+Ez esetleges data-leak esetén adatlopáshoz vezethet, ami negatív hatással van a felhasználó és a cég megbízhatóságára is. 
+Általában ezekhez az online szerencsejátékokhoz, nem található az adott oldalon egy útmutató, vagy szabályzat sem. 
 Ezeket a hibákat ki lehetne eszközölni azzal, hogy egyrészt ingyenesen elérhető a szolgáltatás, nem igényel regisztrációt,
-ezzel kiküszöbölve az esetleges adatlopás lehetőségét, valamint kliens oldali futással elérhető, hogy a szolgáltatás ne függjön a szerver futásától, és mindig elérhető legyen a felhasználó számára.
+ezzel kiküszöbölve az esetleges adatlopás lehetőségét, valamint kliens oldali futással elérhető, hogy a szolgáltatás ne függjön a szerver futásától, 
+és mindig elérhető legyen a felhasználó számára.
 
 4. Igényelt üzleti folyamatok modellje.
 
@@ -32,25 +40,38 @@ Azért, hogy egy komfortosabb és kölcsönös megbízást érjünk el a felhasz
 7. Használati esetek
 
 A projektünk a szabványos Blackjack/21 szabályait követi, így megfelelve a szerencsejáték követelménynek. 
-A szolgáltatás teljesen ingyenes és nem igényel regisztrációt, emiatt nem zárjuk el a felhasználók nagy részét magunktól és adataikat nem tesszük ki a kiszivárgás veszélyének, valamint olyanoknak is lehetőséget adunk, akik esetleg nem tudnák megfizetni a szükséges kezdőösszeget a játékoknál.
-Egy könnyen kezelhető, letisztult, átlátható dizájnnal kedvezünk a könnyen felfoghatóság és átláthatóság feltételének. Nem szerveroldalon futtatunk kódot, ezáltal eleget teszünk a folyamatos elérhetőség feltételének.
+A szolgáltatás teljesen ingyenes és nem igényel regisztrációt, 
+emiatt nem zárjuk el a felhasználók nagy részét magunktól és adataikat nem tesszük ki a kiszivárgás veszélyének, 
+valamint olyanoknak is lehetőséget adunk, akik esetleg nem tudnák megfizetni a szükséges kezdőösszeget a játékoknál.
+Egy könnyen kezelhető, letisztult, átlátható dizájnnal kedvezünk a könnyen felfoghatóság és átláthatóság feltételének. 
+Nem szerveroldalon futtatunk kódot, ezáltal eleget teszünk a folyamatos elérhetőség feltételének.
 
 8. Képernyő tervek
 
 A projektünk egy weboldalon fog futni, és ezen az egy felületen fogunk maradni. 
-A felületen láthatóak lesznek a felhasználónak osztott kártyák, az dealer kártyái(persze a szabályoknak megfelelően), valamint a kártyák szabályok szerinti összegét. 
-A felhásználó számára felhasználható lépések láthatóak lesznek, gombok formájában. A kezdőösszeg, a nyert összeg, valamint a jelenlegi tét is látható lesz.
+A felületen láthatóak lesznek a felhasználónak osztott kártyák, a dealer kártyái(persze a szabályoknak megfelelően), 
+valamint a kártyák szabályok szerinti összegét. 
+A felhásználó számára felhasználható lépések láthatóak lesznek, gombok formájában. A kezdőösszeg, a nyert összeg, 
+valamint a jelenlegi tét is látható lesz.
 
 9. Forgatókönyv
 
 Szereplők: A felhasználó és a futó webes alkalmazás.
-A felhasználó megnyitja a böngészőjében a szolgáltatást, majd kap egy virtuális kezdőösszeget, amivel téteket rakhat a szabályos Blackjack játékban. 
-Ha a felhasználó nem ismeri a játékot, akkor van lehetősége elolvasni a szabályokat és tippeket. A felhasználó a tét letétele után kapja meg a kártyáit(2 kártyát), 
+A felhasználó megnyitja a böngészőjében a szolgáltatást, majd kap egy virtuális kezdőösszeget, 
+amivel téteket rakhat a szabályos Blackjack játékban. 
+Ha a felhasználó nem ismeri a játékot, akkor van lehetősége elolvasni a szabályokat és tippeket. 
+A felhasználó a tét letétele után kapja meg a kártyáit(2 kártyát), 
 majd a dealer is kioszt magának 2 kártyát, 
-ezután eldöntheti, hogy meg akarja-e tartani a kártyáit vagy bedobni, ezután eldöntheti, hogy marad-e a jelenlegi kártyafelállással vagy szeretne több kártyát hívni. 
-Hívás esetén, ha a kártyák túlmennek a '21' értéken összegezve, akkor a felhasználó vagy a dealer elveszti a kört, ezzel a felrakott tétet is. 
-A nyertes felhasználó visszakapja a felrakott tét dupláját. A dealernek kötelező megállni, ha 17-es összeget húz. A dealer nem fogy ki a pénzből, de ha a felhasználó elveszíti az összes pénzét, akkor újra kell kezdenie a játékot és elveszíti az 'össznyeremény' számlálóján látható számot és lenullázódik. 
-A minimum tét növekedik a rendelkezésre álló pénz alapján. A játék mint folyamat a végtelenségig tarthat, ha a felhasználó ügyes és jól játszik.
+ezután eldöntheti, hogy meg akarja-e tartani a kártyáit vagy bedobni, ezután eldöntheti, 
+hogy marad-e a jelenlegi kártyafelállással vagy szeretne több kártyát hívni. 
+Hívás esetén, ha a kártyák túlmennek a '21' értéken összegezve, 
+akkor a felhasználó vagy a dealer elveszti a kört, ezzel a felrakott tétet is. 
+A nyertes felhasználó visszakapja a felrakott tét dupláját. 
+A dealernek kötelező megállni, ha 17-es összeget húz. A dealer nem fogy ki a pénzből, 
+de ha a felhasználó elveszíti az összes pénzét, 
+akkor újra kell kezdenie a játékot és elveszíti az 'össznyeremény' számlálóján látható számot és lenullázódik. 
+A minimum tét növekedik a rendelkezésre álló pénz alapján. A játék mint folyamat a végtelenségig tarthat,
+ha a felhasználó ügyes és jól játszik.
 
 10. Funkció-követelmény megfeleltetés
 
