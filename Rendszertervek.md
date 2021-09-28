@@ -1,12 +1,12 @@
 # ﻿Rendszerterv
 
 ## 1.Rendszer célja
-A rendszer célja, hogy a felhasználó próbára tehesse szerencséjét a program ellen, a megszokott Blackjack/21 szabályai szerint költségmentesen.
-Fontos, hogy a játékos könnyen el tudjon igazolni a felületen, ezért minimalista felhasználói felületet kap a program.
+A rendszer célja, hogy a felhasználó próbára tehesse szerencséjét valamint tudását a program ellen, a megszokott Blackjack/21 szabályai szerint költségmentesen.
+Fontos, hogy a játékos könnyen el tudjon igazodni a felületen, ezért egy minimalista felhasználói felületet kap a program.
 Egyetlen szerepkör van a program használatánál, a felhasználó, de az csak a játék végigvezetéséhez szükséges funkciókhoz ad hozzáférést,
 a program működésének megváltoztathatásához, a kódhoz nem fér hozzá közvetlenül.
 Az alkalmazás webes felületen lesz elérhető, ezért törekszünk, hogy minél több böngészővel legyen kompatibilis.
-A játékosa nyert körök után a tétje dupláját kapja, vesztett körök után pedig elveszti a tétjét, addig megy a játék, ameddig
+A játékos minden nyert kör után a tétje dupláját kapja vissza, vesztett kör után pedig elveszti a tétjét, addig megy a játék, ameddig
 ki nem fogynak a tétnek felrakható összegből, vagy fel nem adják a játékot.
 
 ## 2.Projekt terv
@@ -40,7 +40,7 @@ A játékos képes kiválasztani, hogy a jelenlegi lapokra ráhúz, tétet rak, 
     A rendszer fejlesztése HTML/CSS valamint JavaScript segítségével történik.
         A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
     A weboldal használatához egy egyszerű böngészőre van szükség.
-    A rendszert bármilyen operációs rendszeren és böngészőben haszálható lesz, valamint telefonról is.
+    A rendszer bármilyen operációs rendszeren és böngészőben haszálható lesz, valamint telefonról is.
 
 ## 7. Archtitekturális terv
 A rendszerhez mindössze egy webböngészőre van szükség, amely képes JavaScript kódot futtani. Mivel az egész a kliens oldalon fut, akár a HTML fájl megnyitásával futtatható a játék alkalmazás.
@@ -49,10 +49,13 @@ A rendszerhez mindössze egy webböngészőre van szükség, amely képes JavaSc
 Az alkalmazás elkészítése során szükség van a folyamatos tesztelésre.
 Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos vagy a gép nyer, illetve az új játék kezdésénél a pontszám nullázását.
 
-A különöző teszteket itt fogjuk naplózni, amikor a projekt a tesztelési szakaszhoz ér.
+A különönböző teszteket itt fogjuk naplózni, amikor a projekt a tesztelési szakaszhoz ér.
 
 ## 9. Telepítési terv
-Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.
+Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség, nem igényel külön telepítést.
 
 ## 10. Karbantartási terv
 Az alkalmazás bővítési lehetőségét fenntartjuk. A későbbiekben többjátékos mód is hozzáadható.
+
+## 11. Implementációs terv
+A felület HTML és CSS nyelven fog készülni valamint JavaScript-et is felhasználunk az alkalmazás készítéséhez. A jobb átláthatóság és a továbbfejleszthetőség érdekében elkülönítve szeretnénk kezelni ezeket a technológiákat és utólag kapcsoljuk össze őket. 
