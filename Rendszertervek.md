@@ -1,13 +1,13 @@
 # ﻿Rendszerterv
 
-##1.Rendszer célja
+## 1.Rendszer célja
 A rendszer célja, hogy a játékos legyőzze a gépet a Blackjack kártyajátékban.
 Ha a játékos nyer, akkor a feltett tét duplája hozzáadódik a nyert összeg számlálójához.
 Ha a gép nyer, a feltett tét elvész, döntetlennél pedig visszaadódik a számlálóba. 
 A játék használatához nem szükséges regisztrálni, viszont ha elhagyjuk az oldalt akkor a pontszám törlődik.
 A játék az eredeti szabályok szerint megy, a 21-hez közelebbi szám nyer, azonos pontszámnál a kevesebb lap nyer, az ász pedig a többi laptól függően érhet 1-et vagy 11-et.
 
-##2.Projekt terv
+## 2.Projekt terv
 	A projektet weblapra fejlesztjük front- és backend segítségével. Az elkülönített feladatokon más-más emberek dolgoznak.
 	Frontend fejlesztése HTML/CSS segítségével
 	Frontend felelősök:
