@@ -1,11 +1,13 @@
 # ﻿Rendszerterv
 
 ## 1.Rendszer célja
-A rendszer célja, hogy a játékos legyőzze a gépet a Blackjack kártyajátékban.
-Ha a játékos nyer, akkor a feltett tét duplája hozzáadódik a nyert összeg számlálójához.
-Ha a gép nyer, a feltett tét elvész, döntetlennél pedig visszaadódik a számlálóba. 
-A játék használatához nem szükséges regisztrálni, viszont ha elhagyjuk az oldalt akkor a pontszám törlődik.
-A játék az eredeti szabályok szerint megy, a 21-hez közelebbi szám nyer, azonos pontszámnál a kevesebb lap nyer, az ász pedig a többi laptól függően érhet 1-et vagy 11-et.
+A rendszer célja, hogy a felhasználó próbára tehesse szerencséjét a program ellen, a megszokott Blackjack/21 szabályai szerint költségmentesen.
+Fontos, hogy a játékos könnyen el tudjon igazolni a felületen, ezért minimalista felhasználói felületet kap a program.
+Egyetlen szerepkör van a program használatánál, a felhasználó, de az csak a játék végigvezetéséhez szükséges funkciókhoz ad hozzáférést,
+a program működésének megváltoztathatásához, a kódhoz nem fér hozzá közvetlenül.
+Az alkalmazás webes felületen lesz elérhető, ezért törekszünk, hogy minél több böngészővel legyen kompatibilis.
+A játékosa nyert körök után a tétje dupláját kapja, vesztett körök után pedig elveszti a tétjét, addig megy a játék, ameddig
+ki nem fogynak a tétnek felrakható összegből, vagy fel nem adják a játékot.
 
 ## 2.Projekt terv
 	A projektet weblapra fejlesztjük front- és backend segítségével. Az elkülönített feladatokon más-más emberek dolgoznak.
@@ -23,17 +25,19 @@ A játék az eredeti szabályok szerint megy, a 21-hez közelebbi szám nyer, az
 
 
 ## 4.Követelmények
-	A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével történik.
-	A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
-A weboldal használatához egy egyszerű böngészőre van szükség.
+	- Webes megvalósítás.
+	- A rendszer fejlesztése HTML/CSS valamint JavaScript segítségével történik.
+	- A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
+	- A weboldal használatához egy egyszerű böngészőre van szükség.
+	- Megszakításmentes játékmenet.
 
 ## 5.Funkcionális terv
 Rendszerszereplők:
--Játékos: Rendszerünknek nincs más szereplője, csak a játékos, mert nincs értelme több, pl. egy admin szereplő hozzáadásának.
-A játékos képes kiválasztani, hogy a jelenlegi lapokra ráhúz, tétet rak, vagy kiszáll.
+	- Játékos: Rendszerünknek nincs más szereplője, csak a játékos, mert nincs értelme több, pl. egy admin szereplő hozzáadásának.
+A játékos képes kiválasztani, hogy a jelenlegi lapokra ráhúz, tétet rak, dupláz, vagy kiszáll.
 
 ## 6. Fizikai környezet
-    A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével történik.
+    A rendszer fejlesztése HTML/CSS valamint JavaScript segítségével történik.
         A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg.
     A weboldal használatához egy egyszerű böngészőre van szükség.
     A rendszert bármilyen operációs rendszeren és böngészőben haszálható lesz, valamint telefonról is.
@@ -44,6 +48,8 @@ A rendszerhez mindössze egy webböngészőre van szükség, amely képes JavaSc
 ## 8. Tesztterv
 Az alkalmazás elkészítése során szükség van a folyamatos tesztelésre.
 Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos vagy a gép nyer, illetve az új játék kezdésénél a pontszám nullázását.
+
+A különöző teszteket itt fogjuk naplózni, amikor a projekt a tesztelési szakaszhoz ér.
 
 ## 9. Telepítési terv
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.
