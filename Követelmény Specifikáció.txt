@@ -11,14 +11,14 @@ Elég sok oldalon, ahol ingyenes is, még a regisztráció is elvárt, valamint 
 Többek között egy olyan szolgáltatást akarunk nyújtani, ahol még az is, aki szeret szerencsejátékokkal játszani gyakorolhat vagy megértheti a játék szabályait és taktikáit.
 
 3. Vágyálomrendszer
-A csoportunk célja, hogy létrehozzunk a projekt keretében egy olyan Blackjack játékot egy weboldalon, ami regisztrációmentes, ingyenes, letisztult (nem túlbonyolított dizájn) és elmagyarázza a szabályokat a játék oldalán a felhasználó számára.
+A csoportunk célja, hogy létrehozzunk a projekt keretében egy olyan Blackjack játékot egy weboldalon, ami regisztrációmentes, ingyenes és letisztult (nem túlbonyolított dizájn), valamint elmagyarázza a szabályokat a játék oldalán a felhasználó számára.
 A játékban a felhasználó próbára teheti szerencséjét és logikus/matematikai gondolkodását és játszhat egy virtuális dealer (a program) ellen.
 Az oldal megadja a kezdő tétet, amivel elindul a felhasználó és megjeleníti, ha az esetleg változna, valamint megjeleníti az eddig nyert összeg értékét is.
-Ha a felhasználó kifogyna az összegből amit kapott és/vagy nyert, akkor újra kell kezdenie a játékot és a nyereményszámláló lenullázódik.
+Ha a felhasználó kifogyna az összegből, amit kapott és/vagy nyert, akkor újra kell kezdenie a játékot és a nyereményszámláló lenullázódik.
 
 4. Funkcionális követelmények
 A projekt funkcionálisan nem bonyolult vagy terjengős. Egy böngésző szükséges a használatához, ami támogat Javascriptet, és kliens oldalon fut.
-Rendelkezik egy, a felhasználó rendelkezésére álló összeg számlálójával, ha ez nulla, vagy az alá esik, véget ér a játék és újra kell kezdeni,
+Rendelkezik egy, a felhasználó rendelkezésére álló összeg számlálójával, ha nulla, vagy az alá esik, véget ér a játék és újra kell kezdeni,
 továbbá egy, a jelenlegi játék alatt nyert összeg számlálójával, a játékosnak feltünteti a kiosztott lapokat és szintúgy a virtuális dealer lapjait.
 
 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
