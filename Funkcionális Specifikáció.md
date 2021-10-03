@@ -1,6 +1,6 @@
-Funkcionális Specifikáció
+# Funkcionális Specifikáció
 
-1. Áttekintés
+## 1. Áttekintés
 
 Egy olyan kliensoldali alkalmazást fejlesztünk, ami a kaszinókban elterjedt, híres Blackjack/21 kártyajátékot nyújtja
 a felhasználók számára ingyenesen, regisztrációmentesen és személyes adatok felhasználása nélkül. 
@@ -11,13 +11,13 @@ Az alkalmazást bármikor el lehet érni böngészőből, letöltést nem igény
 A játék a megszokott Blackjack/21 szabályai szerint fog működni, amivel a felhasználó próbára teheti szerencséjét.
 
 
-2. Jelenlegi helyzet
+## 2. Jelenlegi helyzet
 
 A megrendelő szeretne egy letisztult oldallal rendelkező, ingyenes, letöltést nem igénylő Blackjack gyakorló webes alkalmazást, ami nem szerverfüggő. 
 A rendszer lehetőséget nyújt azoknak, akiknek nem áll módjában fizetni hasonló szolgáltatásokért és/vagy nem hajlandóak megosztani adataikat, 
 azzal veszélynek kitéve azokat, esetlegesen pedig csak egy gyakorlófelületet keres, ami elmagyarázza a játék szabályait.
 
-3. Jelenlegi üzleti folyamatok modellje (TO DO: rajz)
+## 3. Jelenlegi üzleti folyamatok modellje
 
 Manapság minden ilyen elterjedt szerencsejáték, ami online megtalálható igényel regisztrációt és egy összeg prémium befizetését a játék elkezdéséhez.
 Ez leszűkíti a lehetséges felhasználók halmazát, sőt teljesen elijeszt embereket a szerencsejátékoktól. 
@@ -28,7 +28,7 @@ Ezeket a hibákat ki lehetne küszöbölni azzal, hogy egyrészt ingyenesen elé
 (ezzel kiküszöbölve az esetleges adatlopás lehetőségét), valamint kliens oldali futással érhető el, hogy a szolgáltatás ne függjön a szerver futásától, 
 és mindig elérhető legyen a felhasználó számára.
 
-4. Igényelt üzleti folyamatok modellje. (TO DO: rajz)
+## 4. Igényelt üzleti folyamatok modellje. (TO DO: rajz)
 
 Azért, hogy egy komfortosabb és kölcsönös megbízást érjünk el a felhasználókkal, egy olyan szerencsejáték szolgáltatást hoznánk létre, ami:
 	-Nem igényel letöltést, így nem áll fenn a lehetőség, hogy a tárolt adatokhoz egyáltalán hozzáférjen.
@@ -37,7 +37,7 @@ Azért, hogy egy komfortosabb és kölcsönös megbízást érjünk el a felhasz
 	-Nem szerveroldalon futtatjuk a szolgáltatást, így elérhető a felhasználó számára, szinte bármikor, szervertől való függés nélkül.
 	-A játékhoz szükséges információkat és szabályokat közli a felhasználóval.
 	
-7. Használati esetek
+## 7. Használati esetek
 
 A projektünk a szabványos Blackjack/21 szabályait követi (lásd: 9. Forgatókönyv). 
 A szolgáltatás teljesen ingyenes és nem igényel regisztrációt, 
@@ -46,15 +46,11 @@ valamint olyanoknak is lehetőséget adunk, akik esetleg nem tudnák megfizetni 
 Egy könnyen kezelhető, letisztult, átlátható dizájnnal megfelelünk a könnyen felfoghatóság és átláthatóság feltételének. 
 Nem futtatunk szerveroldalon kódot, ezáltal eleget teszünk a folyamatos elérhetőség feltételének.
 
-8. Képernyő tervek (TO DO: rajz)
+## 8. Képernyő tervek
 
-A projektünk egy weboldalon fog futni, és ezen az egy felületen fogunk maradni. 
-A felületen láthatóak lesznek a felhasználónak osztott kártyák, a dealer kártyái(persze a szabályoknak megfelelően), 
-valamint a kártyák szabályok szerinti összegét. 
-A felhásználó számára felhasználható lépések láthatóak lesznek, gombok formájában. A kezdőösszeg, a nyert összeg, 
-valamint a jelenlegi tét is látható lesz.
+![Funk drawio](https://user-images.githubusercontent.com/82752886/135749142-efffc873-8187-4163-84a0-3c5b748e40e6.png)
 
-9. Forgatókönyv
+## 9. Forgatókönyv
 
 Szereplők: A felhasználó és a futó webes alkalmazás.
 A felhasználó megnyitja a böngészőjében a szolgáltatást, majd kap egy virtuális kezdőösszeget, 
@@ -73,12 +69,12 @@ akkor újra kell kezdenie a játékot és elveszíti az össznyeremény számlá
 A minimum tét növekedik a rendelkezésre álló pénz alapján. A játék mint folyamat a végtelenségig tarthat,
 ha a felhasználó ügyes és jól játszik.
 
-10. Funkció-követelmény megfeleltetés
+## 10. Funkció-követelmény megfeleltetés
 
 A projektünk az ismert Blackjack/21 szabályai alapján fog működni, így az azáltal előírt funkciókat tartalmazni fogja a projekt, 
 ezzel eleget téve a szerencsejáték követelménynek.
 
-11. Fogalomszótár
+## 11. Fogalomszótár
 
 Dealer: Kártyaosztó angolul.
 data-leak: Adatszivárgás.
