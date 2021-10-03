@@ -42,10 +42,10 @@ akik nem a legális térben mozognak, ezt szeretnénk kiküszöbölni azzal, hog
 felhasználóktól, továbbá kliens oldalon fut, így még egy szerver sem kezel semmit, amit a felhasználó tudta nélkül küldene az eszköze.
 
 ## 8. Fogalomtár
--Blackjack: Sokak által ismert kaszinójáték, elterjedt neve még a huszonegy.
+- Blackjack: Sokak által ismert kaszinójáték, elterjedt neve még a huszonegy.
 
--Dealer: Angolul az 'osztó'-t jelenti.
+- Dealer: Angolul az 'osztó'-t jelenti.
 
--Data leak: Adatszivárgás. Amikor egy szervezettől, vagy cégtől kiszivárognak adatok. Jelen kontextusban olyan adatszivárgásról van szó, ami a felhasználók személyes adatainak kiszivárgását jelenti.
+- Data leak: Adatszivárgás. Amikor egy szervezettől, vagy cégtől kiszivárognak adatok. Jelen kontextusban olyan adatszivárgásról van szó, ami a felhasználók személyes adatainak kiszivárgását jelenti.
 Általában csak e-mailek és jelszavak szoktak kiszivárogni, de súlyosabb esetek is léteznek.
 
