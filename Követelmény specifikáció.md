@@ -22,10 +22,11 @@ Rendelkezik egy, a felhasználó rendelkezésére álló összeg számlálójáv
 továbbá egy, a jelenlegi játék alatt nyert összeg számlálójával, a játékosnak feltünteti a kiosztott lapokat és szintúgy a virtuális dealer lapjait.
 
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
-++TODO LISTÁZÁS++
-A projektünket az ismert kaszinó Blackjack vagy 21 szabályai alapján készítjük el. A projekt nem tartalmaz pénzfeltöltési vagy kezelési funkciót,
-nem folyik át rajta pénz semmilyen módon, valamint nem igényel regisztrációt vagy bármiféle adatot a felhasználótól, így egy közönséges játéknak
-vagy gyakorló játéknak/demo játéknak nevezhető, éppen ezért mondhatni, hogy nem ütközik semmilyen jogszabályba, valamint nem használunk fel jogszabályt fejlesztési alapnak.
+-A projekt az ismert Blackjack/21 szabályai alapján készül.
+-A szolgáltatás nem igényel pénzes hozzájárulást.
+-Mivel nem igényel pénzes hozzájárulást, ezért nem sorolható be a profitáló szerencsejátékok közé.
+-A játék gyakorló vagy demo játéknak felel meg a Blackjack koncepcióról.
+-Az előbbiek által nem ütközik jogszabályba.
 
 ## 6. Jelenlegi üzleti folyamatok modellje
 ++TODO MODELL++
