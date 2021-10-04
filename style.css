@@ -1,0 +1,9 @@
+tr.TableMenu1>td {
+	padding-bottom: 1em;
+	padding-right: 1em;
+}
+
+tr.VDTableRow>td {
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
