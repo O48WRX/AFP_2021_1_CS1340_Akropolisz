@@ -29,7 +29,6 @@ továbbá egy, a jelenlegi játék alatt nyert összeg számlálójával, a ját
 -Az előbbiek által nem ütközik jogszabályba.
 
 ## 6. Jelenlegi üzleti folyamatok modellje
-++TODO MODELL++
 Manapság az online szerencsejáték oldalakra szükséges minimum pénzösszeg, és szinte nem is nyújtanak gyakorlási vagy bemutatót a felhasználók számára, hanem
 egyből a mélyvízbe dobják. Ezek az oldalak regisztrációt igényelnek személyes adatokkal, valamint bizonyos esetekben lehet, hogy az oldalak bonyolultak és
 nehezen kezelhetőek felhasználók számára és így nem tudják kiélvezni a játékot vagy egyáltalán belekezdeni. Ez sokakat elijeszt az ilyesféle online játékok használatától.
