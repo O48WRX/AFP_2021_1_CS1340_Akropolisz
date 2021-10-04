@@ -41,6 +41,9 @@ Manapság a személyes adatok megadása egy oldalon sok veszélynek teszi ki ada
 akik nem a legális térben mozognak, ezt szeretnénk kiküszöbölni azzal, hogy egyáltalán nem kérünk semmiféle regisztrációt és semmilyen személyes adatot a
 felhasználóktól, továbbá kliens oldalon fut, így még egy szerver sem kezel semmit, amit a felhasználó tudta nélkül küldene az eszköze.
 
+![KövSpec_IgényeltÜFM drawio](https://user-images.githubusercontent.com/82752886/135893022-8ed2b59c-1724-45fd-8b0c-4b46a70f864f.png)
+
+
 ## 8. Fogalomtár
 - Blackjack: Sokak által ismert kaszinójáték, elterjedt neve még a huszonegy.
 
