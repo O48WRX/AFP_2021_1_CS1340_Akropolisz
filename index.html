@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
 </head>
 <header div id="header">
 	Blackjack
@@ -25,15 +26,19 @@
 				A játékos jelenlegi kártyái
 			</td>
 			<td></td>
+			<td></td>
+			<td></td>
 			<td id="AvailableFunds"><!--Ide lesz kiadva a játékosnak rendelkezésére álló összeg--></td>
 			<td id="Score"><!--Ide lesz kiírva a játékos által eddig nyert összeg--></td>
 		</tr>
 	</table>
 	<table>
 		<tr div id="FunctionButtons">
-			<td><button>Hívás</button></td>
+			<!--TODO: Tét megrakás gomb/bevitel-->
+			<td><button onclick="Call()">Hívás</button></td>
 			<td><button>Duplázás</button></td>
 			<td><button>Bedobás</button></td>
+			<td><button>Megállás</button></td>
 		</tr>
 	</table>
 
@@ -52,5 +57,61 @@
 			</td>
 		</tr>
 	</table>
+	<script>
+		/Változó deklarációk/
+		var deck = [2,3,4,5,6,7,8,9,10,10,10,10,
+					2,3,4,5,6,7,8,9,10,10,10,10,
+					2,3,4,5,6,7,8,9,10,10,10,10,
+					2,3,4,5,6,7,8,9,10,10,10,10];
+
+		var jatekosKartyai;
+		var sumJatekosKartyai;
+		var sumVDKartyai;
+		var VDKartyai;
+		var rendOsszeg = 1000;
+		var nyertOsszeg = 0;
+		var VDHuzhat = true;
+
+		/Függvények/
+		function DrawRandomCard(deck) {
+			/Zsolti: Ez nem tudom miért van így, de csak így jó/
+			var randomindex = Math.floor(deck.length * Math.random())
+			return deck[randomindex];
+		}
+
+		function StartGame() {
+			jatekosKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
+			VDKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
+			/Zsolti: Nem tárolom el a sum változókba, mert redundancia lenne, mivel később amúgy is felül kell írni./
+			if ((VDKartyai[0] + VDKartyai[1]) == 17) {
+				VDHuzhat = false;
+			}
+		}
+
+		function Throw() {
+			/Csak helytartó függvény/
+			return;
+		}
+
+		function Call() {
+			/Zsolti: hiányzik, hogy ha túlmegy az érték a 21-en akkor elveszti a tétet és kört a felhasználó. Ez így még nem elég jó./
+			jatekosKartyai.push(DrawRandomCard(deck));
+			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai;
+		}
+
+		function DoubleDown() {
+			/Csak helytartó függvény/
+			return;
+		}
+		/Zsolti: Meghívom a StartGame függvényt, hogy alaphelyzetbe rakja a játékot./
+		StartGame();
+
+		/Zsolti: Felhasználó számára fontos összegek vagy információk vizualizálása./
+		document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai;
+		document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
+		document.getElementById("AvailableFunds").innerHTML = rendOsszeg;
+		document.getElementById("Score").innerHTML = nyertOsszeg;
+
+	</script>
 </body>
 </html>

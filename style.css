@@ -1,4 +1,10 @@
-tr.TableMenu1>td {
+header {
+	text-align: center;
+	font-size: 50px;
+}
+
+
+tr.TableMenu1>td, AvailableFunds, Score {
 	padding-bottom: 1em;
 	padding-right: 1em;
 }
