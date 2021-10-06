@@ -22,13 +22,13 @@ Rendelkezik egy, a felhasználó rendelkezésére álló összeg számlálójáv
 továbbá egy, a jelenlegi játék alatt nyert összeg számlálójával, a játékosnak feltünteti a kiosztott lapokat és szintúgy a virtuális dealer lapjait.
 
 ## 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
-++TODO LISTÁZÁS++
-A projektünket az ismert kaszinó Blackjack vagy 21 szabályai alapján készítjük el. A projekt nem tartalmaz pénzfeltöltési vagy kezelési funkciót,
-nem folyik át rajta pénz semmilyen módon, valamint nem igényel regisztrációt vagy bármiféle adatot a felhasználótól, így egy közönséges játéknak
-vagy gyakorló játéknak/demo játéknak nevezhető, éppen ezért mondhatni, hogy nem ütközik semmilyen jogszabályba, valamint nem használunk fel jogszabályt fejlesztési alapnak.
+-A projekt az ismert Blackjack/21 szabályai alapján készül.
+-A szolgáltatás nem igényel pénzes hozzájárulást.
+-Mivel nem igényel pénzes hozzájárulást, ezért nem sorolható be a profitáló szerencsejátékok közé.
+-A játék gyakorló vagy demo játéknak felel meg a Blackjack koncepcióról.
+-Az előbbiek által nem ütközik jogszabályba.
 
 ## 6. Jelenlegi üzleti folyamatok modellje
-++TODO MODELL++
 Manapság az online szerencsejáték oldalakra szükséges minimum pénzösszeg, és szinte nem is nyújtanak gyakorlási vagy bemutatót a felhasználók számára, hanem
 egyből a mélyvízbe dobják. Ezek az oldalak regisztrációt igényelnek személyes adatokkal, valamint bizonyos esetekben lehet, hogy az oldalak bonyolultak és
 nehezen kezelhetőek felhasználók számára és így nem tudják kiélvezni a játékot vagy egyáltalán belekezdeni. Ez sokakat elijeszt az ilyesféle online játékok használatától.
@@ -40,6 +40,9 @@ A szolgáltatásunk könnyen és komfortosan kezelhetőségével szeretnénk kit
 Manapság a személyes adatok megadása egy oldalon sok veszélynek teszi ki adatainkat, bizonyos data leak-ek során olyan emberek kezébe is juthatnak adataink,
 akik nem a legális térben mozognak, ezt szeretnénk kiküszöbölni azzal, hogy egyáltalán nem kérünk semmiféle regisztrációt és semmilyen személyes adatot a
 felhasználóktól, továbbá kliens oldalon fut, így még egy szerver sem kezel semmit, amit a felhasználó tudta nélkül küldene az eszköze.
+
+![KövSpec_IgényeltÜFM drawio](https://user-images.githubusercontent.com/82752886/135893022-8ed2b59c-1724-45fd-8b0c-4b46a70f864f.png)
+
 
 ## 8. Fogalomtár
 - Blackjack: Sokak által ismert kaszinójáték, elterjedt neve még a huszonegy.
