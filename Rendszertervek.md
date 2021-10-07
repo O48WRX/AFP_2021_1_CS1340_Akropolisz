@@ -51,7 +51,12 @@ A rendszerhez mindössze egy webböngészőre van szükség, amely képes JavaSc
 Az alkalmazás elkészítése során szükség van a folyamatos tesztelésre.
 Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos vagy a gép nyer, illetve az új játék kezdésénél a pontszám nullázását.
 
-A különönböző teszteket itt fogjuk naplózni, amikor a projekt a tesztelési szakaszhoz ér.
+Unit teszt: 
+	2021.10.06: Metódusok működése és működésének biztosítása teszt során megtörtént és hiba nélkül lefutott. - Kardos Zsolt
+Alpha teszt:
+	2021.10.07: A projektet leteszteltük Mozilla Firefox, Google Chrome és Microsoft Edge környezetben, kisebb vizuális torzulással de működését megőrizte. - Kardos Zsolt, 	Riczkó Henrik, Hadobás Dávid
+Béta teszt:
+	2021.10.07: A projekt letesztelése különböző böngészőkben, különböző felbontásokban és telefonon, kisebb vizuális torzulás de a funkciók működése megmaradt. - Balogh Mihály 
 
 ## 9. Telepítési terv
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség, nem igényel külön telepítést.
