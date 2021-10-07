@@ -20,3 +20,9 @@ tr.VDTableRow>td {
 	margin: 0;
 	position: relative;
 }
+
+h3 {
+	text-align: center;
+	font-size: 35px;
+}
+

@@ -27,6 +27,7 @@
 			if ((VDKartyai[0] + VDKartyai[1]) == 17) {
 				VDHuzhat = false;
 			}
+			Doubling = false;
 		}
 
 		function IsInt(n) {
@@ -121,6 +122,10 @@
 		}
 
 		function StopAndEvaluate() {
+			if (activeBet == 0) {
+				alert("Először tétet kell raknia!");
+				return;
+			}
 			document.getElementById("ShowVDCards").innerHTML = VDKartyai;
 			if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai)) {
 				RoundLost();
@@ -133,7 +138,7 @@
 				VDKartyai.push(DrawRandomCard(deck));
 				document.getElementById("ShowVDCards").innerHTML = VDKartyai;
 			}
-			alert(GetCardValue(VDKartyai) + "<->" + GetCardValue(jatekosKartyai));
+			alert("Virtuális dealer kártyái: " + GetCardValue(VDKartyai) + "<->" + "A játékos kártyái: " + GetCardValue(jatekosKartyai));
 			if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai) && GetCardValue(VDKartyai) <= 21) {
 				RoundLost();
 				return;
