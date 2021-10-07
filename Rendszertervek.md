@@ -17,7 +17,7 @@ ki nem fogynak a tétnek felrakható összegből, vagy fel nem adják a játéko
 
 	A feladat célja, hogy egy letisztult, könnyen kezelhető, igényes weblapot nyújtson a felhasználó számára.
 
-	Backend felelősök: Kardos Zsolt(O48WRX), Hadobás Dávid
+	Backend felelősök: Kardos Zsolt(O48WRX), Hadobás Dávid (TB3376)
 		-Javascript és tesztelés
 
 	Feladatuk a háttérben működő programok megírása, randomizálás, JavaScript kód, és az eredmény kiértékelés.
