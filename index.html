@@ -159,8 +159,8 @@
 
 		function GetCardValue(CardDeck) {
 			sumvalue = 0;
-			for (cards in CardDeck) {
-				sumvalue = sumvalue + cards;
+			for (let i = 0; i < CardDeck.length; i++) {
+				sumvalue = sumvalue + CardDeck[i];
 			}
 			return sumvalue;
 		}
@@ -183,9 +183,18 @@
 
 		function StopAndEvaluate() {
 			document.getElementById("ShowVDCards").innerHTML = VDKartyai;
-			while (!(GetCardValue(VDKartyai) >= 21) && !(GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai)) {
-				VDKartyai.push(DrawRandomCard(deck));
+			if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai)) {
+				RoundLost();
+				return;
 			}
+			while (GetCardValue(VDKartyai) <= 21 || GetCardValue(VDKartyai) < GetCardValue(jatekosKartyai)) {
+				if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai)) {
+					break;
+				}
+				VDKartyai.push(DrawRandomCard(deck));
+				document.getElementById("ShowVDCards").innerHTML = VDKartyai;
+			}
+			alert(GetCardValue(VDKartyai) + "<->" + GetCardValue(jatekosKartyai));
 			if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai) && GetCardValue(VDKartyai) <= 21) {
 				RoundLost();
 				return;
