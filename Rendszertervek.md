@@ -12,11 +12,13 @@ ki nem fogynak a tétnek felrakható összegből, vagy fel nem adják a játéko
 ## 2.Projekt terv
 	A projektet weblapra fejlesztjük front- és backend segítségével. Az elkülönített feladatokon más-más emberek dolgoznak.
 	Frontend fejlesztése HTML/CSS segítségével
-	Frontend felelősök:
+	Frontend felelősök: Riczkó Henrik (D5GPJ6), Balogh Mihály(GUFVXA)
+		-HTML, CSS és oldal dizájn
 
 	A feladat célja, hogy egy letisztult, könnyen kezelhető, igényes weblapot nyújtson a felhasználó számára.
 
-	Backend felelősök:
+	Backend felelősök: Kardos Zsolt(O48WRX), Hadobás Dávid
+		-Javascript és tesztelés
 
 	Feladatuk a háttérben működő programok megírása, randomizálás, JavaScript kód, és az eredmény kiértékelés.
 	
