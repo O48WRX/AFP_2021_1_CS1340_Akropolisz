@@ -1,16 +1,28 @@
 header {
-	text-align: center;
 	font-size: 50px;
 }
-
+.red
+{
+	color:red;
+}
+.black
+{
+	color:black
+}
+body
+{
+	background-color: green;
+	color:white;
+	font-size: 25px;
+}
 
 tr.TableMenu1>td, AvailableFunds, Score {
 	padding-bottom: 1em;
-	padding-right: 1em;
+	padding-right: 5em;
 }
 
 tr.VDTableRow>td {
-	padding-bottom: 1em;
+	//padding-bottom: 1em;
 	padding-top: 1em;
 }
 
