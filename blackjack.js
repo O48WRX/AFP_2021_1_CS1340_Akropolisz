@@ -55,6 +55,7 @@
 			}
 			rendOsszeg = rendOsszeg - activeBet;
 			document.getElementById("AvailableFunds").innerHTML = rendOsszeg+" (Nyert: "+nyertOsszeg+")";
+			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+ " ("+GetCardValue(jatekosKartyai)+")";
 		}
 
 		function Throw() {
@@ -65,7 +66,7 @@
 			alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!");
 			nyertOsszeg = nyertOsszeg - activeBet;
 			StartGame();
-			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")";
+			document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
 			document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 			activeBet = 0;
 			Doubling = false;
@@ -79,7 +80,7 @@
 				GameLost();
 			}
 			StartGame();
-			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")";
+			document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
 			document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 			
 			doubling = false;
@@ -91,7 +92,7 @@
 			nyertOsszeg = nyertOsszeg + (activeBet * 2)
 			document.getElementById("AvailableFunds").innerHTML = rendOsszeg+ " (Nyert: "+nyertOsszeg+")";
 			StartGame();
-			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")";
+			document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
 			document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 			activeBet = 0;
 			Doubling = false;
@@ -114,7 +115,7 @@
 			}
 			/Zsolti: hiányzik, hogy ha túlmegy az érték a 21-en akkor elveszti a tétet és kört a felhasználó. Ez így még nem elég jó./
 			jatekosKartyai.push(DrawRandomCard(deck));
-			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+ " ("+GetCardValue(jatekosKartyai)+")";;
+			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+ " ("+GetCardValue(jatekosKartyai)+")";
 			if (GetCardValue(jatekosKartyai) == 21) {
 				StopAndEvaluate();
 			}
@@ -200,6 +201,6 @@
 		StartGame();
 
 		/Zsolti: Felhasználó számára fontos összegek vagy információk vizualizálása./
-		document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai + " ("+GetCardValue(jatekosKartyai)+")";
+		document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)"
 		document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 		document.getElementById("AvailableFunds").innerHTML = rendOsszeg+ " (Nyert: "+nyertOsszeg+")";
