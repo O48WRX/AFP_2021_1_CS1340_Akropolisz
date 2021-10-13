@@ -52,3 +52,21 @@ A tesztelést és hibajavítűst mind a 4 fejlesztőre kiosztottuk, a saját ter
 | 1. | **Mobil teszt** | A program telefonokon nem jelent meg megfelelő módon, ez később javítva lett de a gombok kisebb készülékeken túl kicsik és nehezen olvashatóak. |
 | 2. | **Grafikai hibák** | A felületen megjelenő ikonok nem jelentek meg rendesen de ez javítva lett. |
 | 3. | **Animáció hibák** | A blackjack felírat animációja akadozva mozgott néhány böngészőben. |
+
+## 3.3 Hadobás Dávid - TB3376
+
+### Sikeres Tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Crash Course teszt** | A program gombjait, véletlenszerűen nyomkodtuk, de nem dobott abszurd végeredményt, a programfolyás normálisan folyt tovább. |
+| 2. | **Gombfunkció teszt** | Korábban a gombok hatására a függvények nem hívták meg egymást, ennek javítása után a teszt sikeres volt. |
+| 3. | **A játék végességének tesztje** | Ebben a tesztben a cél a játékbeli összeg 0-ra vitelével próbálkoztunk meg, hogy teszteljük a végességét, sikerrel. |
+
+
+### Hibás tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Crash Course 2 teszt** | A programnak határértéken kívüli értékeket adtunk tétnek, amit nem fogadott el, újból feldobta a tétbekérő ablakot. |
+| 2. | **Kiíratási teszt** | A program egyes esetekben nem írta ki az ellenfél kártyáit, amikor erre szükség lett volna, ez a hiba ki lett javítva. |
