@@ -53,7 +53,17 @@ A tesztelést és hibajavítűst mind a 4 fejlesztőre kiosztottuk, a saját ter
 | 2. | **Grafikai hibák** | A felületen megjelenő ikonok nem jelentek meg rendesen de ez javítva lett. |
 | 3. | **Animáció hibák** | A blackjack felírat animációja akadozva mozgott néhány böngészőben. |
 
-## 3.3 Hadobás Dávid - TB3376
+## 3.3 Balogh Mihály Viktor - GUFVXA
+
+### Sikeres Tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Megfelelő elkülönítés** | A program felületén a szabályzat és a játék részei jól elkülöníthetőek. |
+| 2. | **Megjelenési mechanika** | A weblapon rendezetten jelennek meg a program elemei. |
+| 3. | **Személyzet** | A weblappal foglalkozó csapattagok feltüntetése 
+
+## 3.4 Hadobás Dávid - TB3376
 
 ### Sikeres Tesztek
 
