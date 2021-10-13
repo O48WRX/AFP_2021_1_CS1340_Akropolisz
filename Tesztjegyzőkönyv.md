@@ -61,7 +61,15 @@ A tesztelést és hibajavítűst mind a 4 fejlesztőre kiosztottuk, a saját ter
 |---|---|---|
 | 1. | **Megfelelő elkülönítés** | A program felületén a szabályzat és a játék részei jól elkülöníthetőek. |
 | 2. | **Megjelenési mechanika** | A weblapon rendezetten jelennek meg a program elemei. |
-| 3. | **Személyzet** | A weblappal foglalkozó csapattagok feltüntetése 
+| 3. | **Személyzet** | A weblappal foglalkozó csapattagok feltüntetése. |
+
+
+### Hibás tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Felületi hiba** | A program felületén nem megfelelően jelentek meg a csapattagok. |
+| 2. | **Szöveg hiba** | A weblapon az Impresszum cím rossz pozíción foglalt helyet. |
 
 ## 3.4 Hadobás Dávid - TB3376
 
