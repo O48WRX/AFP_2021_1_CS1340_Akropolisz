@@ -1,1 +1,35 @@
-##INITIAL COMMIT
+# Tesztjegyzőkönyv
+
+## 1. Bevezetés
+A tesztelés az alkalmazás fejlesztés egyik, hanem a legfontosabb mellékteendője,
+mivel ezekből a tesztekből derül ki, hogy mik vannak teljesen készen, és miket kell a későbbiekben javítani.
+Ezeket a teszteket a fejlsztők hajtják végre, általában a saját részükön, hogy pontosan tudják,
+hogy hol keressék az esetleges hibákat.
+
+## 2. Tesztelési terv hatóköre, célja:
+Ahogy a bevezetésben is leírtuk, a tesztelés legfontosabb célja, hogy a fejlesztők kiszűrjék a program hibáit
+és azokat minnél hamarabb és minnél hatékonyabban javítsák ki.
+A frontend fejlesztők a frontend részt nézik át, a backend fejlesztők pedig a saját, backend részüket tesztelik.
+
+## 3. Tesztek
+A tesztelést és hibajavítűst mind a 4 fejlesztőre kiosztottuk, a saját terület-felelősségük alapján
+
+## 3.1 Kardos Zsolt - O48WRX
+
+### Sikeres Tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Logikai teszt** | A program logikai hátterének sikeres működéstesztje. |
+| 2. | **Függvény teszt** | A program függvényeinek működésének és helyes meghívásának sikeres tesztje. |
+| 3. | **Függvény-szabály összefüggés tesztje** | A függvény logikai összefüggésének tesztelése a játékszabályzattal. |
+| 4. | **Gombok funkcionális tesztje** | A gombok sikeres függvényes összekötése után az adott gombok sikeres működéstesztje jött. |
+| 5. | **Javscript formok tesztje** | A tétmegadáshoz szükséges form értékmegadási és logikai, sikeres tesztje. |
+
+### Hibás tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Crash Course teszt** | A programnak abszurd értékeket adtunk, esetleges hibák fellelésére, ám ezzel nem jutottunk sokra és megzavaródott a logika. Ez a hiba később ki lett javítva. |
+| 2. | **Crash Course 2 teszt** | A program gombjait, véletlenszerűen nyomkodjuk, emiatt összezavaródott a logika, ez a hiba a teszt alatt ki lett javítva. |
+| 3. | **Kiértékelés teszt** | A program logikájában, a kiértékelés megírásakor végtelen ciklus keletkezett, emiatt volt szükség erre a tesztre. A hiba még a tesztelés során ki lett javítva. |
