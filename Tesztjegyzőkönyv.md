@@ -69,7 +69,7 @@ A tesztelést és hibajavítűst mind a 4 fejlesztőre kiosztottuk, a saját ter
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Felületi hiba** | A program felületén nem megfelelően jelentek meg a csapattagok. |
-| 2. | **Szöveg hiba** | A weblapon az Impresszum cím rossz pozíción foglalt helyet. |
+| 2. | **Szöveg hiba** | A weblapon az Impresszum cím rossz területen foglalt helyet. |
 
 ## 3.4 Hadobás Dávid - TB3376
 
