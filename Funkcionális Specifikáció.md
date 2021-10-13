@@ -28,7 +28,7 @@ Ezeket a hibákat ki lehetne küszöbölni azzal, hogy egyrészt ingyenesen elé
 (ezzel kiküszöbölve az esetleges adatlopás lehetőségét), valamint kliens oldali futással érhető el, hogy a szolgáltatás ne függjön a szerver futásától, 
 és mindig elérhető legyen a felhasználó számára.
 
-## 4. Igényelt üzleti folyamatok modellje. (TO DO: rajz)
+## 4. Igényelt üzleti folyamatok modellje.
 
 Azért, hogy egy komfortosabb és kölcsönös megbízást érjünk el a felhasználókkal, egy olyan szerencsejáték szolgáltatást hoznánk létre, ami:
 	-Nem igényel letöltést, így nem áll fenn a lehetőség, hogy a tárolt adatokhoz egyáltalán hozzáférjen.
