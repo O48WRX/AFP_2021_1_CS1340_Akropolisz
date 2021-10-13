@@ -33,3 +33,22 @@ A tesztelést és hibajavítűst mind a 4 fejlesztőre kiosztottuk, a saját ter
 | 1. | **Crash Course teszt** | A programnak abszurd értékeket adtunk, esetleges hibák fellelésére, ám ezzel nem jutottunk sokra és megzavaródott a logika. Ez a hiba később ki lett javítva. |
 | 2. | **Crash Course 2 teszt** | A program gombjait, véletlenszerűen nyomkodjuk, emiatt összezavaródott a logika, ez a hiba a teszt alatt ki lett javítva. |
 | 3. | **Kiértékelés teszt** | A program logikájában, a kiértékelés megírásakor végtelen ciklus keletkezett, emiatt volt szükség erre a tesztre. A hiba még a tesztelés során ki lett javítva. |
+
+## 3.2 Riczkó Henrik - D5GPJ6
+
+### Sikeres Tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Firefox böngésző teszt** | A program kinézete Firefox böngészőben megfelel az elvártaknak. |
+| 2. | **Chrome böngésző teszt** | A program kinézete Chrome böngészőben szintén megfelel az elvártaknak. |
+| 3. | **Felbontás teszt** | A program különböző felbontásokban is megjelent megfelelően. |
+
+
+### Hibás tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Mobil teszt** | A program telefonokon nem jelent meg megfelelő módon, ez később javítva lett de a gombok kisebb készülékeken túl kicsik és nehezen olvashatóak. |
+| 2. | **Grafikai hibák** | A felületen megjelenő ikonok nem jelentek meg rendesen de ez javítva lett. |
+| 3. | **Animáció hibák** | A blackjack felírat animációja akadozva mozgott néhány böngészőben. |
