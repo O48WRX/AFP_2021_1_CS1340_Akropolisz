@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<header div id="header">
+	<marquee direction="right"; width=100%><span class=red>♥ ♦ </span>Blackjack<span class=black> ♠ ♣</span></marquee>
+	
+</header>
+<hr size="11" color="#000000">
+<body>
+	<h2>🂠 A játékos jelenlegi kártyái 🃏</h2>
+	<table div class="GameStateTable">
+		<tr class="TableMenu1">
+			<td id="ShowPlayerCards">
+				<!-- Ide lesznek kiadva a játékos jelenlegi kiosztott kártyái-->
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>💰Rendelkezésre álló összeg💰</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<!--🂠 A játékos jelenlegi kártyái 🃏-->
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="AvailableFunds"><!--Ide lesz kiadva a játékosnak rendelkezésére álló összeg--></td>
+			<td id="Score"><!--Ide lesz kiírva a játékos által eddig nyert összeg--></td>
+		</tr>
+	</table>
+	<table>
+		<tr div id="FunctionButtons">
+			<!--TODO: Tét megrakás gomb/bevitel-->
+			<td><button onclick="Call()">Hívás</button></td>
+			<td><button onclick="DoubleDown()">Duplázás</button></td>
+			<td><button onclick="Throw()">Bedobás</button></td>
+			<td><button onclick="StopAndEvaluate()">Megállás</button></td>
+		</tr>
+	</table>
+	<button onclick="Bet()" class="BetButton">Tét</button>
+
+	<p></p>
+
+	<h2>🃏 A virtuális dealer jelenlegi kártyái 🂠</h2>
+	<table div class="GameStateTable">
+		<tr class="VDTableRow">
+			<td id="ShowVDCards">
+				<!-- Ide lesznek kiadva a virtuális dealer jelenlegi kiosztott kártyái-->
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+		</tr>
+	</table>
+	<script src="blackjack.js"></script>
+
+	<h3 div id="h3">
+		⚠ Szabályzat ⚠
+	</h3>
+	<hr size="8" color="#000000">
+	<p>
+		A Blackjack a hagyományos kaszinós szabályok alapján megy. <br>
+		A játék célja a kártyák értékének összegével megközelíteni a 21-es értéket de nem túlhaladni azt. <br>
+		A kártyák különböző értékkel bírnak: [2,3,4,5,6,7,8,9,10,10,10,10] --> a lehetséges kártyalapok <br>
+		A játék elején kötelező tétet tenni, másféleképp nem tudjuk játszani a játékot. <br>
+		Ha a rendelkezésünkre álló összeg elfogy, akkor véget ér a játék és új játék indul. <br>
+		A játék fő célja az, hogy egy játékmenet alatt minél több zsetont szerezzünk. Egy ügyes felhasználó akár a végtelenségig is tud játszani! <br>
+		<br>
+		A lehetséges műveletek: <br>
+		-Tét: A Tét gombbal tudjuk megadni az általunk kívánt tétet, aminek minimum 100 zsetonnak kell lennie! <br>
+		-Hívás: Ha a tét meg lett rakva, akkor a hívás funkcióval egy új, véletlenszerű kártyalapot húzunk a pakliból.<br> Ez addig lehetséges, amíg a lapok értékének összege nem éri el a 21-et.  <br>
+		-Duplázás: Ha a tét meg lett rakva, akkor a duplázás funkcióval a tét dupláját felrakhatjuk, de csak 1 lapot húzunk. Körönként csak egyszer lehet meghívni! <br>
+		-Bedobás: Ha a tét meg lett rakva de nem szeretnénk megjátszani a lapjainkat, akkor a bedobás funkciót használva gyorsan véget ér a kör, és elvesztjük a tétet és lapjainkat. <br>
+		-Megállás: Ha a tét meg lett rakva, és kiértékelni szeretnénk a lapjainkat a virtuális dealer-el szemben, használjuk a megállás funkciót, ami eldönti, hogy megnyerjük-e az adott kört avagy sem. <br>
+	</p>
+	
+	<h3 div id="h3">
+		⚠ Impresszum ⚠
+	</h3>
+	<hr size="8" color="#000000">
+	<p>
+		<center>
+			<a style= "color: red"> AFP1</a><br>			
+			Kardos Zsolt,
+			Riczkó Henrik,
+			Balogh Mihály Viktor,
+			Hadobás Dávid
+			<br><a style= "color: black"> AFP3</a><br> 
+			Lehóczky Csaba,
+			Molnár Levente
+		</center>
+	</p>
+
+</body>
+</html>
